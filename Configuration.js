@@ -9,7 +9,7 @@ function getConfiguration(config)
   // For instance, if the address of the device is actually a MAC 
   // address, you may want to use the code below.
   
-  config.addressLabel = {en: "DevEUI", es: "DevEUI"};
+  // config.addressLabel = {en: "MAC address", es: "Dirección MAC"};
 }
 
 function getEndpoints(deviceAddress, endpoints)
@@ -23,8 +23,8 @@ function getEndpoints(deviceAddress, endpoints)
   // In the code below, two endpoints are created. The first is a
   // temperature sensor, while the second one is a carbon dioxide sensor.
 
-  endpoints.addEndpoint("1", "Temperature sensor", endpointType.temperatureSensor);
-  endpoints.addEndpoint("2", "Battery", endpointType.voltageSensor);
+  // endpoints.addEndpoint("1", "Temperature sensor", endpointType.temperatureSensor);
+  // endpoints.addEndpoint("2", "CO2 sensor", endpointType.ppmConcentrationSensor, ppmConcentrationSensorSubType.carbonDioxide);
 }
 
 function validateDeviceAddress(address, result)
