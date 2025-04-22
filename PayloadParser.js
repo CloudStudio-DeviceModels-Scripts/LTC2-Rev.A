@@ -22,8 +22,7 @@ function parseUplink(device, payload)
         var b = device.endpoints.byAddress("3");
 
         if (b != null)
-            b.updateVoltageSensorStatus(parsed.BatV);
-            b.updateDeviceBattery({ voltage: BatV });
+            b.updateGenericSensorStatus(parsed.BatV);
     }
 }
 
